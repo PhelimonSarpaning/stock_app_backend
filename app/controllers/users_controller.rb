@@ -15,10 +15,11 @@ class UsersController < ApplicationController
 
   # POST /users
   def create
-      @user = User.new(user_params)
-
+    hashed_password = BCrypt::Password.create(params[:password])
+    @user = User.new(user_params)
     @user.name = params[:name]
-    @user.password = params[:password]
+    @user.username = params[:username]
+    @user.password = hashed_password
     @user.money = 10000
 
     if @user.save
