@@ -4,25 +4,28 @@ class SessionsController < ApplicationController
   end
 
   def create
-    p "++++++++++++++++++++++"
-    puts params[:username]
-    p "+++++++++++++++++++++"
-    render 'new'
+
+
+    @user = User.find_by_username(params[:username])
+
+      if @user
+        if BCrypt::Password.new(@user.password) == params[:password]
+          render json: @user, status: :created, user: @user
+        else
+
+          render json: {error: "wrong password"}
+
+        end
+
+      else
+        #  user is not available
+        render json: {error: "No User "}
+      end
+
   end
 
   def destroy
   end
 
-  # def login
-  #   @user = User.find_by_username(params[:username])
-  #   if @user.password == params[:password]
-  #     puts " -- user login ok "
-  #     render json: @user
-  #     # give_token
-  #   else
-  #     # redirect_to home_url
-  #     render json: @user.errors, status: :unprocessable_entity
-  #   end
-  # end
 
 end
