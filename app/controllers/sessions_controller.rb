@@ -7,13 +7,13 @@ class SessionsController < ApplicationController
 
 
     @user = User.find_by_username(params[:username])
-
       if @user
         if BCrypt::Password.new(@user.password) == params[:password]
-          render json: @user, status: :created, user: @user
+          render json: @user, status: :created, location: @user
         else
 
-          render json: {error: "wrong password"}
+          render json: {error: "wrong password", success: false}
+
 
         end
 
@@ -25,6 +25,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+      session[:username] = nil
   end
 
 
