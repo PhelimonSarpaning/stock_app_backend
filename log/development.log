@@ -46,9 +46,9 @@ Completed 200 OK in 11ms (Views: 1.9ms | ActiveRecord: 2.0ms)
 
 
 Started GET "/favicon.ico" for 127.0.0.1 at 2017-05-17 18:38:24 -0400
-  
+
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
-  
+
 actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -93,7 +93,7 @@ Migrating to AddPasswordDigest (20170518001549)
   [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "money", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "charlie"], ["money", "10000.0"], ["created_at", "2017-05-18 00:19:34.117455"], ["updated_at", "2017-05-18 00:19:34.117455"], ["password_digest", "$2a$10$fpo8qBoUYkpbS6wN74.WzeLhp/SlCVkI4guvy289DrADIpSeyQtnm"]]
   [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
 Started POST "/users" for 127.0.0.1 at 2017-05-18 11:20:17 -0400
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -101,7 +101,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.0.3) lib/active_record/migration.rb:573:in `check_pending!'
 activerecord (5.0.3) lib/active_record/migration.rb:549:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
@@ -132,7 +132,7 @@ puma (3.8.2) lib/puma/server.rb:435:in `process_client'
 puma (3.8.2) lib/puma/server.rb:299:in `block in run'
 puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/users" for 127.0.0.1 at 2017-05-18 11:21:34 -0400
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -140,7 +140,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.0.3) lib/active_record/migration.rb:573:in `check_pending!'
 activerecord (5.0.3) lib/active_record/migration.rb:549:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
@@ -171,7 +171,7 @@ puma (3.8.2) lib/puma/server.rb:435:in `process_client'
 puma (3.8.2) lib/puma/server.rb:299:in `block in run'
 puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/" for 127.0.0.1 at 2017-05-18 11:21:51 -0400
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -179,7 +179,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.0.3) lib/active_record/migration.rb:573:in `check_pending!'
 activerecord (5.0.3) lib/active_record/migration.rb:549:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
@@ -210,7 +210,7 @@ puma (3.8.2) lib/puma/server.rb:435:in `process_client'
 puma (3.8.2) lib/puma/server.rb:299:in `block in run'
 puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/" for 127.0.0.1 at 2017-05-18 11:22:43 -0400
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -218,7 +218,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.0.3) lib/active_record/migration.rb:573:in `check_pending!'
 activerecord (5.0.3) lib/active_record/migration.rb:549:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
@@ -249,7 +249,7 @@ puma (3.8.2) lib/puma/server.rb:435:in `process_client'
 puma (3.8.2) lib/puma/server.rb:299:in `block in run'
 puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/" for 127.0.0.1 at 2017-05-18 11:23:52 -0400
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -257,7 +257,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.0.3) lib/active_record/migration.rb:573:in `check_pending!'
 activerecord (5.0.3) lib/active_record/migration.rb:549:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
@@ -345,9 +345,9 @@ Processing by UsersController#create as */*
 Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: user):
-  
+
 app/controllers/users_controller.rb:55:in `user_params'
 app/controllers/users_controller.rb:18:in `create'
 Started POST "/users" for 127.0.0.1 at 2017-05-18 11:29:53 -0400
@@ -355,9 +355,9 @@ Processing by UsersController#create as */*
 Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: user):
-  
+
 app/controllers/users_controller.rb:55:in `user_params'
 app/controllers/users_controller.rb:18:in `create'
 Started POST "/users" for 127.0.0.1 at 2017-05-18 11:33:41 -0400
@@ -365,15 +365,15 @@ Processing by UsersController#create as */*
 Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: user):
-  
+
 app/controllers/users_controller.rb:55:in `user_params'
 app/controllers/users_controller.rb:18:in `create'
 Started OPTIONS "/users" for 127.0.0.1 at 2017-05-18 11:37:16 -0400
-  
+
 ActionController::RoutingError (No route matches [OPTIONS] "/users"):
-  
+
 actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -395,9 +395,9 @@ puma (3.8.2) lib/puma/server.rb:435:in `process_client'
 puma (3.8.2) lib/puma/server.rb:299:in `block in run'
 puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started OPTIONS "/users/" for 127.0.0.1 at 2017-05-18 11:37:36 -0400
-  
+
 ActionController::RoutingError (No route matches [OPTIONS] "/users"):
-  
+
 actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -423,9 +423,9 @@ Processing by UsersController#create as */*
 Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: user):
-  
+
 app/controllers/users_controller.rb:55:in `user_params'
 app/controllers/users_controller.rb:18:in `create'
 Started GET "/users" for 127.0.0.1 at 2017-05-18 11:38:11 -0400
@@ -464,9 +464,9 @@ Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 1.5ms)
 
 
 Started OPTIONS "/users/" for 127.0.0.1 at 2017-05-18 11:42:53 -0400
-  
+
 ActionController::RoutingError (No route matches [OPTIONS] "/users"):
-  
+
 actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -488,9 +488,9 @@ puma (3.8.2) lib/puma/server.rb:435:in `process_client'
 puma (3.8.2) lib/puma/server.rb:299:in `block in run'
 puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started OPTIONS "/users" for 127.0.0.1 at 2017-05-18 11:43:59 -0400
-  
+
 ActionController::RoutingError (No route matches [OPTIONS] "/users"):
-  
+
 actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -518,9 +518,9 @@ Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 0.6ms)
 
 
 Started GET "/user" for 127.0.0.1 at 2017-05-18 11:44:57 -0400
-  
+
 ActionController::RoutingError (No route matches [GET] "/user"):
-  
+
 actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -542,9 +542,9 @@ puma (3.8.2) lib/puma/server.rb:435:in `process_client'
 puma (3.8.2) lib/puma/server.rb:299:in `block in run'
 puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started OPTIONS "/Users" for 127.0.0.1 at 2017-05-18 11:45:15 -0400
-  
+
 ActionController::RoutingError (No route matches [OPTIONS] "/Users"):
-  
+
 actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -656,85 +656,24 @@ Processing by UsersController#create as HTML
   [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
 Completed 201 Created in 195ms (Views: 6.3ms | ActiveRecord: 4.4ms)
 
+Started GET "/users/login" for 127.0.0.1 at 2017-05-18 12:56:27 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"login"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 34ms (ActiveRecord: 8.0ms)
 
-Started POST "/users" for 127.0.0.1 at 2017-05-18 09:34:05 -0700
-  
-ActiveRecord::NoDatabaseError (FATAL:  database "stock_app_api_development" does not exist
-):
-  
-activerecord (5.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:675:in `rescue in connect'
-activerecord (5.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
-activerecord (5.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
-activerecord (5.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
-activerecord (5.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
-activerecord (5.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
-activerecord (5.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
-activerecord (5.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
-activerecord (5.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
-activerecord (5.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
-activerecord (5.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
-activerecord (5.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
-activerecord (5.0.3) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
-activerecord (5.0.3) lib/active_record/connection_handling.rb:91:in `connection'
-activerecord (5.0.3) lib/active_record/migration.rb:559:in `connection'
-activerecord (5.0.3) lib/active_record/migration.rb:546:in `call'
-actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
-activesupport (5.0.3) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
-activesupport (5.0.3) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
-activesupport (5.0.3) lib/active_support/callbacks.rb:90:in `run_callbacks'
-actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
-actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
-actionpack (5.0.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
-actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
-actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
-railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
-railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
-activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
-activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
-activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
-railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
-actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
-rack (2.0.3) lib/rack/runtime.rb:22:in `call'
-activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
-actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
-actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
-rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
-rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
-railties (5.0.3) lib/rails/engine.rb:522:in `call'
-puma (3.8.2) lib/puma/configuration.rb:224:in `call'
-puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
-puma (3.8.2) lib/puma/server.rb:435:in `process_client'
-puma (3.8.2) lib/puma/server.rb:299:in `block in run'
-puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
-Started POST "/users" for 127.0.0.1 at 2017-05-18 09:34:07 -0700
-  
-ActiveRecord::NoDatabaseError (FATAL:  database "stock_app_api_development" does not exist
-):
-  
-activerecord (5.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:675:in `rescue in connect'
-activerecord (5.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
-activerecord (5.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
-activerecord (5.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
-activerecord (5.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
-activerecord (5.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
-activerecord (5.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
-activerecord (5.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
-activerecord (5.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
-activerecord (5.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
-activerecord (5.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
-activerecord (5.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
-activerecord (5.0.3) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
-activerecord (5.0.3) lib/active_record/connection_handling.rb:91:in `connection'
-activerecord (5.0.3) lib/active_record/migration.rb:559:in `connection'
-activerecord (5.0.3) lib/active_record/migration.rb:546:in `call'
-actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
-activesupport (5.0.3) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
-activesupport (5.0.3) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
-activesupport (5.0.3) lib/active_support/callbacks.rb:90:in `run_callbacks'
-actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
-actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
-actionpack (5.0.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
-actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=login):
+
+app/controllers/users_controller.rb:60:in `set_user'
+Started GET "/login" for 127.0.0.1 at 2017-05-18 13:02:51 -0400
+
+ActionController::RoutingError (No route matches [GET] "/login"):
+
+actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+>>>>>>> 8b6be90e0d0b6e47b847dda20e1d974643a829b1
 actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
 railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
@@ -804,3 +743,422 @@ Completed 201 Created in 194ms (Views: 1.5ms | ActiveRecord: 15.4ms)
 
 
   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+=======
+Started POST "/login" for 127.0.0.1 at 2017-05-18 13:23:30 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"dsd", "password"=>"[FILTERED]", "session"=>{"username"=>"dsd", "password"=>"[FILTERED]"}}
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-05-18 13:24:02 -0400
+Processing by SessionsController#new as */*
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-18 13:26:32 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"matthew", "password"=>"[FILTERED]", "session"=>{"username"=>"matthew", "password"=>"[FILTERED]"}}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (6.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8466514545143581290);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddColumnToUsers (20170518184845)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (27.4ms)[0m  [1m[35mALTER TABLE "users" ADD "username" character varying[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170518184845"]]
+  [1m[35m (7.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8466514545143581290)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/users" for 127.0.0.1 at 2017-05-18 14:50:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 32ms (Views: 10.5ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-05-18 14:51:11 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-05-18 14:52:01 -0400
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"Matthew Nguyen", "username"=>"test", "password"=>"[FILTERED]", "money"=>"10000"}}
+Unpermitted parameter: username
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (6.7ms)[0m  [1m[32mINSERT INTO "users" ("money", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["money", "10000.0"], ["created_at", "2017-05-18 18:52:01.472753"], ["updated_at", "2017-05-18 18:52:01.472753"]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 18ms (Views: 2.1ms | ActiveRecord: 12.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-05-18 14:52:26 -0400
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"Matthew Nguyen", "username"=>"test", "password"=>"[FILTERED]", "money"=>"10000"}}
+Unpermitted parameter: username
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("money", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["money", "10000.0"], ["created_at", "2017-05-18 18:52:26.762353"], ["updated_at", "2017-05-18 18:52:26.762353"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 7ms (Views: 0.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-05-18 14:54:50 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 24ms (Views: 19.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-05-18 15:00:39 -0400
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"matthew", "username"=>"test", "password"=>"[FILTERED]", "money"=>"100000"}}
+Unpermitted parameter: username
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("money", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["money", "10000.0"], ["created_at", "2017-05-18 19:00:39.473461"], ["updated_at", "2017-05-18 19:00:39.473461"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 42ms (Views: 9.1ms | ActiveRecord: 3.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-05-18 15:00:50 -0400
+Processing by UsersController#create as */*
+  Parameters: {"users"=>{"name"=>"matthew", "username"=>"test", "password"=>"[FILTERED]", "money"=>"100000"}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+
+app/controllers/users_controller.rb:55:in `user_params'
+app/controllers/users_controller.rb:18:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-05-18 15:01:17 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"Hoang", "username"=>"test", "password"=>"[FILTERED]", "user"=>{"name"=>"Hoang", "password"=>"[FILTERED]", "username"=>"test"}}
+Unpermitted parameter: username
+  [1m[35m (2.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (6.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "password", "money", "created_at", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Hoang"], ["password", "test"], ["money", "10000.0"], ["created_at", "2017-05-18 19:01:17.772064"], ["updated_at", "2017-05-18 19:01:17.772064"], ["username", "test"]]
+  [1m[35m (12.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 33ms (Views: 1.2ms | ActiveRecord: 21.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-05-18 15:01:23 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:02:09 -0400
+
+SyntaxError (/Users/matthewnguyen/dev/project-4/stock_app_backend/app/controllers/sessions_controller.rb:13: syntax error, unexpected tIDENTIFIER, expecting ')'
+      @user = User.where("username =" params[:username])
+                                            ^
+/Users/matthewnguyen/dev/project-4/stock_app_backend/app/controllers/sessions_controller.rb:13: syntax error, unexpected ')', expecting keyword_end):
+
+app/controllers/sessions_controller.rb:13: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/controllers/sessions_controller.rb:13: syntax error, unexpected ')', expecting keyword_end
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:03:42 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "session"=>{"username"=>"test", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError (undefined method `Where' for #<Class:0x007fc6450b08e8>
+Did you mean?  where):
+
+app/controllers/sessions_controller.rb:13:in `create'
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:05:07 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "session"=>{"username"=>"test", "password"=>"[FILTERED]"}}
+Completed 204 No Content in 8ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:06:13 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "session"=>{"username"=>"test", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1[0m  [["username", "test"]]
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 0.0ms)
+
+
+
+NameError (undefined local variable or method `user' for #<SessionsController:0x007fc641af3048>
+Did you mean?  @user):
+
+app/controllers/sessions_controller.rb:15:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-05-18 15:11:37 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"Tomm", "username"=>"test1", "password"=>"[FILTERED]", "user"=>{"name"=>"Tomm", "password"=>"[FILTERED]", "username"=>"test1"}}
+Unpermitted parameter: username
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+
+NameError (uninitialized constant User::Password):
+
+app/models/user.rb:14:in `password='
+app/controllers/users_controller.rb:18:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-05-18 15:14:48 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"Tomm", "username"=>"test2", "password"=>"[FILTERED]", "user"=>{"name"=>"Tomm", "password"=>"[FILTERED]", "username"=>"test2"}}
+Unpermitted parameter: username
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+
+NameError (uninitialized constant User::Password):
+
+app/models/user.rb:14:in `password='
+app/controllers/users_controller.rb:18:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-05-18 15:17:32 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"tommy", "username"=>"test1", "password"=>"[FILTERED]", "user"=>{"name"=>"tommy", "password"=>"[FILTERED]", "username"=>"test1"}}
+Unpermitted parameter: username
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+
+NameError (uninitialized constant User::Password):
+
+app/models/user.rb:14:in `password='
+app/controllers/users_controller.rb:18:in `create'
+Started GET "/users" for 127.0.0.1 at 2017-05-18 15:17:36 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.6ms)
+
+
+
+NameError (uninitialized constant User::Password):
+
+app/models/user.rb:10:in `password'
+app/controllers/users_controller.rb:8:in `index'
+Started GET "/users" for 127.0.0.1 at 2017-05-18 15:17:40 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.8ms)
+
+
+
+NameError (uninitialized constant User::Password):
+
+app/models/user.rb:10:in `password'
+app/controllers/users_controller.rb:8:in `index'
+Started POST "/users" for 127.0.0.1 at 2017-05-18 15:22:01 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"tommy", "username"=>"test1", "password"=>"[FILTERED]", "user"=>{"name"=>"tommy", "password"=>"[FILTERED]", "username"=>"test1"}}
+Unpermitted parameter: username
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (15.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "password", "money", "created_at", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "tommy"], ["password", "$2a$10$UAmgq/.wOZVJQkzeOoPggeNxZAktHYjDIAgvE.lRjDe2jiq98yQ.K"], ["money", "10000.0"], ["created_at", "2017-05-18 19:22:01.359232"], ["updated_at", "2017-05-18 19:22:01.359232"], ["username", "test1"]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 109ms (Views: 4.7ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-05-18 15:22:06 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 12ms (Views: 4.6ms | ActiveRecord: 7.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:27:14 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "session"=>{"username"=>"test", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 9.6ms)
+
+
+
+BCrypt::Errors::InvalidHash (invalid hash):
+
+app/controllers/sessions_controller.rb:16:in `new'
+app/controllers/sessions_controller.rb:16:in `create'
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:28:40 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "session"=>{"username"=>"test", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1[0m  [["username", "test"]]
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError (undefined method `password' for #<User::ActiveRecord_Relation:0x007fc6451e14d8>):
+
+app/controllers/sessions_controller.rb:15:in `create'
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:30:28 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1[0m  [["username", "test1"]]
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError (undefined method `password' for #<User::ActiveRecord_Relation:0x007fc6424570f8>):
+
+app/controllers/sessions_controller.rb:15:in `create'
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:31:16 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1[0m  [["username", "test1"]]
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError (undefined method `password' for #<User::ActiveRecord_Relation:0x007fc6426f2380>):
+
+app/controllers/sessions_controller.rb:16:in `create'
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:31:38 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "session"=>{"username"=>"test", "password"=>"[FILTERED]"}}
+Completed 204 No Content in 80ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:32:49 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1[0m  [["username", "test1"]]
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError (undefined method `password' for #<User::ActiveRecord_Relation:0x007fc6452f8470>):
+
+app/controllers/sessions_controller.rb:19:in `create'
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:33:44 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "session"=>{"username"=>"test", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1[0m  [["username", "test"]]
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError (undefined method `password' for #<User::ActiveRecord_Relation:0x007fc6427309a0>):
+
+app/controllers/sessions_controller.rb:19:in `create'
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:35:38 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "session"=>{"username"=>"test", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1[0m  [["username", "test"]]
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.9ms)
+
+
+
+TypeError (no implicit conversion of Symbol into Integer):
+
+app/controllers/sessions_controller.rb:19:in `create'
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:35:41 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (23.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1[0m  [["username", "test1"]]
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 23.0ms)
+
+
+
+TypeError (no implicit conversion of Symbol into Integer):
+
+app/controllers/sessions_controller.rb:19:in `create'
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:39:54 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 204 No Content in 154ms (ActiveRecord: 34.7ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:42:14 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 156ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:42:23 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 201 Created in 186ms (Views: 1.8ms | ActiveRecord: 7.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:45:30 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "session"=>{"username"=>"test", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 14.8ms)
+
+
+
+BCrypt::Errors::InvalidHash (invalid hash):
+
+app/controllers/sessions_controller.rb:12:in `new'
+app/controllers/sessions_controller.rb:12:in `create'
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:45:37 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 201 Created in 80ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:47:25 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 78ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:48:47 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "session"=>{"username"=>"test", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.3ms)
+
+
+
+BCrypt::Errors::InvalidHash (invalid hash):
+
+app/controllers/sessions_controller.rb:12:in `new'
+app/controllers/sessions_controller.rb:12:in `create'
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:49:10 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "session"=>{"username"=>"test", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.5ms)
+
+
+
+BCrypt::Errors::InvalidHash (invalid hash):
+
+app/controllers/sessions_controller.rb:12:in `new'
+app/controllers/sessions_controller.rb:12:in `create'
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:49:42 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 71ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:49:50 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (11.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 201 Created in 86ms (Views: 1.5ms | ActiveRecord: 11.9ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:53:31 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 200 OK in 108ms (Views: 0.2ms | ActiveRecord: 25.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:54:16 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 200 OK in 93ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-18 15:55:10 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (6.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 201 Created in 80ms (Views: 1.0ms | ActiveRecord: 6.5ms)
+
+
+>>>>>>> 8b6be90e0d0b6e47b847dda20e1d974643a829b1

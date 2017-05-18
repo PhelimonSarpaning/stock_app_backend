@@ -15,10 +15,11 @@ class UsersController < ApplicationController
 
   # POST /users
   def create
+    hashed_password = BCrypt::Password.create(params[:password])
     @user = User.new(user_params)
-
     @user.name = params[:name]
-    @user.password = params[:password]
+    @user.username = params[:username]
+    @user.password = hashed_password
     @user.money = 10000
 
     if @user.save
@@ -41,6 +42,7 @@ class UsersController < ApplicationController
   def destroy
     @user.destroy
   end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
