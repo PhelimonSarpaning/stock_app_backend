@@ -1313,3 +1313,267 @@ Migrating to AddColumnToStock (20170519014148)
   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8466514545143581290)[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started POST "/login" for 127.0.0.1 at 2017-05-19 08:49:42 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (25.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 201 Created in 132ms (Views: 1.3ms | ActiveRecord: 20.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 08:50:52 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 201 Created in 76ms (Views: 0.6ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 08:52:52 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 201 Created in 111ms (Views: 1.0ms | ActiveRecord: 4.8ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 08:54:36 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 201 Created in 80ms (Views: 5.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 08:56:34 -0400
+  
+SyntaxError (/Users/matthewnguyen/dev/project-4/stock_app_backend/app/controllers/sessions_controller.rb:12: syntax error, unexpected '\n', expecting =>):
+  
+app/controllers/sessions_controller.rb:12: syntax error, unexpected '\n', expecting =>
+Started POST "/login" for 127.0.0.1 at 2017-05-19 08:57:26 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 201 Created in 102ms (Views: 1.8ms | ActiveRecord: 5.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 09:04:58 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 157ms (ActiveRecord: 0.9ms)
+
+
+  
+NoMethodError (undefined method `respond_to' for #<SessionsController:0x007fd0f69c3c08>
+Did you mean?  respond_to?):
+  
+app/controllers/sessions_controller.rb:14:in `create'
+Started POST "/login" for 127.0.0.1 at 2017-05-19 09:08:36 -0400
+  
+SyntaxError (/Users/matthewnguyen/dev/project-4/stock_app_backend/app/controllers/sessions_controller.rb:14: syntax error, unexpected keyword_do, expecting ';' or '\n'
+          def respond_to do |format|
+                           ^
+/Users/matthewnguyen/dev/project-4/stock_app_backend/app/controllers/sessions_controller.rb:37: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/sessions_controller.rb:14: syntax error, unexpected keyword_do, expecting ';' or '\n'
+app/controllers/sessions_controller.rb:37: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "/login" for 127.0.0.1 at 2017-05-19 09:09:44 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 0.7ms)
+
+
+  
+NoMethodError (undefined method `respond_to' for #<SessionsController:0x007fd0f3541340>
+Did you mean?  respond_to?):
+  
+app/controllers/sessions_controller.rb:14:in `create'
+Started POST "/login" for 127.0.0.1 at 2017-05-19 09:10:25 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 0.3ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/controllers/sessions_controller.rb:14:in `respond_to?'
+app/controllers/sessions_controller.rb:14:in `create'
+Started POST "/login" for 127.0.0.1 at 2017-05-19 09:12:09 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 126ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `respond_to' for #<SessionsController:0x007fd0f4fc9208>
+Did you mean?  respond_to?):
+  
+app/controllers/sessions_controller.rb:14:in `create'
+Started POST "/login" for 127.0.0.1 at 2017-05-19 09:13:27 -0400
+  
+SyntaxError (/Users/matthewnguyen/dev/project-4/stock_app_backend/app/controllers/sessions_controller.rb:16: syntax error, unexpected $undefined, expecting '}'
+                  :data => @users\,
+                                  ^
+/Users/matthewnguyen/dev/project-4/stock_app_backend/app/controllers/sessions_controller.rb:19: syntax error, unexpected '}', expecting keyword_end):
+  
+app/controllers/sessions_controller.rb:16: syntax error, unexpected $undefined, expecting '}'
+app/controllers/sessions_controller.rb:19: syntax error, unexpected '}', expecting keyword_end
+Started POST "/login" for 127.0.0.1 at 2017-05-19 09:13:42 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 0.2ms)
+
+
+  
+ArgumentError (too few arguments):
+  
+app/controllers/sessions_controller.rb:14:in `format'
+app/controllers/sessions_controller.rb:14:in `create'
+Started POST "/login" for 127.0.0.1 at 2017-05-19 09:14:41 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 81ms (ActiveRecord: 0.2ms)
+
+
+  
+ArgumentError (too few arguments):
+  
+app/controllers/sessions_controller.rb:14:in `format'
+app/controllers/sessions_controller.rb:14:in `create'
+Started POST "/login" for 127.0.0.1 at 2017-05-19 09:15:08 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 200 OK in 84ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 09:16:11 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 200 OK in 76ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 09:16:43 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 200 OK in 78ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 09:16:51 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 200 OK in 70ms (Views: 0.9ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 09:17:51 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 200 OK in 70ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 09:18:23 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 200 OK in 75ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 09:19:15 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 200 OK in 73ms (Views: 1.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 09:48:59 -0400
+  
+SyntaxError (/Users/matthewnguyen/dev/project-4/stock_app_backend/app/controllers/sessions_controller.rb:14: syntax error, unexpected =>
+          payload = {data: => @user.username}
+                             ^
+/Users/matthewnguyen/dev/project-4/stock_app_backend/app/controllers/sessions_controller.rb:14: syntax error, unexpected '}', expecting keyword_end):
+  
+app/controllers/sessions_controller.rb:14: syntax error, unexpected =>
+app/controllers/sessions_controller.rb:14: syntax error, unexpected '}', expecting keyword_end
+Started POST "/login" for 127.0.0.1 at 2017-05-19 09:49:46 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 200 OK in 103ms (Views: 1.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 09:56:53 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 200 OK in 131ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 09:58:54 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 200 OK in 71ms (Views: 0.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/search_stocks?stock=Goog" for 127.0.0.1 at 2017-05-19 10:08:33 -0400
+Processing by StocksController#search as */*
+  Parameters: {"stock"=>"Goog"}
+  [1m[36mStock Load (60.8ms)[0m  [1m[34mSELECT  "stocks".* FROM "stocks" WHERE "stocks"."ticker" = $1 ORDER BY "stocks"."id" ASC LIMIT $2[0m  [["ticker", "Goog"], ["LIMIT", 1]]
+Completed 200 OK in 1384ms (Views: 332.1ms | ActiveRecord: 163.2ms)
+
+
+Started GET "/search_stocks?stock=YHOO" for 127.0.0.1 at 2017-05-19 10:12:33 -0400
+Processing by StocksController#search as */*
+  Parameters: {"stock"=>"YHOO"}
+  [1m[36mStock Load (41.9ms)[0m  [1m[34mSELECT  "stocks".* FROM "stocks" WHERE "stocks"."ticker" = $1 ORDER BY "stocks"."id" ASC LIMIT $2[0m  [["ticker", "YHOO"], ["LIMIT", 1]]
+Completed 200 OK in 1043ms (Views: 319.8ms | ActiveRecord: 41.9ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 10:22:09 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 200 OK in 123ms (Views: 6.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 10:24:36 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"tsadf", "password"=>"[FILTERED]", "session"=>{"username"=>"tsadf", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "tsadf"], ["LIMIT", 1]]
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 8.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 10:24:51 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "session"=>{"username"=>"test", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (26.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 26.5ms)
+
+
+  
+BCrypt::Errors::InvalidHash (invalid hash):
+  
+app/controllers/sessions_controller.rb:12:in `new'
+app/controllers/sessions_controller.rb:12:in `create'
+Started POST "/login" for 127.0.0.1 at 2017-05-19 10:26:56 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (37.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 200 OK in 166ms (Views: 1.3ms | ActiveRecord: 37.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 10:27:35 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "session"=>{"username"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (26.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+Completed 200 OK in 136ms (Views: 0.6ms | ActiveRecord: 26.3ms)
+
+
