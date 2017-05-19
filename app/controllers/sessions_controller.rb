@@ -11,6 +11,24 @@ class SessionsController < ApplicationController
       if @user
         if BCrypt::Password.new(@user.password) == params[:password]
 
+         # ..... Testing user stock
+         @stocks = []
+         userStocks = ['V', 'F', 'GOOG' 'YHOO']
+         puts "***************"
+         userStocks.each do |stockValue|
+           looked_up_stock = StockQuote::Stock.quote(stockValue)
+           tempStock = {
+             name: looked_up_stock.name,
+             symbol: looked_up_stock.symbol
+           }
+          @stocks.push(tempStock)
+         end
+
+
+           puts @stocks
+
+           puts "***************"
+
           payload = {data: @user.username}
           hmac_secret = 'our$ecretTrading$tockApp'
           @token  = JWT.encode payload, hmac_secret, 'HS256'
