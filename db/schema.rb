@@ -40,6 +40,8 @@ ActiveRecord::Schema.define(version: 20170519014148) do
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
     t.string   "password_digest"
+    t.string   "password_salt"
+    t.string   "password_hash"
     t.string   "username"
   end
 
