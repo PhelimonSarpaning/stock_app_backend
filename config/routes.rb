@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'welcome#index'
+  
   get 'sessions/new'
 
   resources :ledgers

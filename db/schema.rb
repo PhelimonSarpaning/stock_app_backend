@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170519014148) do
+ActiveRecord::Schema.define(version: 20170519180831) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,16 +21,18 @@ ActiveRecord::Schema.define(version: 20170519014148) do
     t.integer  "qty"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.decimal  "price"
     t.index ["stock_id"], name: "index_ledgers_on_stock_id", using: :btree
     t.index ["user_id"], name: "index_ledgers_on_user_id", using: :btree
   end
 
   create_table "stocks", force: :cascade do |t|
     t.string   "name"
-    t.decimal  "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string   "ticker"
+    t.string   "symbol"
+    t.string   "exchange"
   end
 
   create_table "users", force: :cascade do |t|
