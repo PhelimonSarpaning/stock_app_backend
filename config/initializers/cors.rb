@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'localhost:8000'
+    origins 'localhost:8000', 'https://stocker-proj.herokuapp.com/#!/'
 
     resource '*',
       headers: :any,
@@ -19,6 +19,6 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
 
     resource '*',
       headers: :any,
-      methods: [:get, :post, :put, :patch, :delete, :options, :head]
+      methods: [:get, :options, :head]
   end
 end
