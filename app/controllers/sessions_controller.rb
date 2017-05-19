@@ -1,3 +1,4 @@
+require 'jwt'
 class SessionsController < ApplicationController
 
   def new
@@ -9,17 +10,30 @@ class SessionsController < ApplicationController
     @user = User.find_by_username(params[:username])
       if @user
         if BCrypt::Password.new(@user.password) == params[:password]
-          render json: @user, status: :created, location: @user
+
+          payload = {data: @user.username}
+          hmac_secret = 'our$ecretTrading$tockApp'
+          @token  = JWT.encode payload, hmac_secret, 'HS256'
+
+          puts @token
+
+          render json: {
+            user:  @user,
+            token:  @token
+         }
+
+
+
+
+          # render json: @user, status: :created, location: @user, message: 'token'
         else
 
           render json: {error: "wrong password", success: false}
-
-
         end
 
       else
         #  user is not available
-        render json: {error: "No User "}
+        render json: {error: "wrong username"}
       end
 
   end
