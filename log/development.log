@@ -1577,3 +1577,189 @@ Processing by SessionsController#create as HTML
 Completed 200 OK in 136ms (Views: 0.6ms | ActiveRecord: 26.3ms)
 
 
+Started POST "/users" for 127.0.0.1 at 2017-05-19 08:33:01 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (16.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.3) lib/active_record/migration.rb:573:in `check_pending!'
+activerecord (5.0.3) lib/active_record/migration.rb:549:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.3) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.3) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.3) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.0.3) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/users" for 127.0.0.1 at 2017-05-19 08:34:27 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.3) lib/active_record/migration.rb:573:in `check_pending!'
+activerecord (5.0.3) lib/active_record/migration.rb:549:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.3) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.3) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.3) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.0.3) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8466514545143581290);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddColumnToStock (20170519014148)
+  [1m[35m (12.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (16.5ms)[0m  [1m[35mALTER TABLE "stocks" ADD "ticker" character varying[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170519014148"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8466514545143581290)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started POST "/users" for 127.0.0.1 at 2017-05-19 08:35:37 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"jerrica9", "username"=>"jerrica9", "password"=>"[FILTERED]", "user"=>{"name"=>"jerrica9", "password"=>"[FILTERED]", "username"=>"jerrica9"}}
+Unpermitted parameter: username
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "password", "money", "created_at", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "jerrica9"], ["password", "$2a$10$vyB3Nvm7po3rdGNjhRRCMuV4cIV7Vi9g6N1NQH/KPeT2b3EXexHyy"], ["money", "10000.0"], ["created_at", "2017-05-19 15:35:37.849423"], ["updated_at", "2017-05-19 15:35:37.849423"], ["username", "jerrica9"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 96ms (Views: 1.5ms | ActiveRecord: 4.9ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 08:35:37 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"jerrica9", "password"=>"[FILTERED]", "session"=>{"username"=>"jerrica9", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "jerrica9"], ["LIMIT", 1]]
+Completed 200 OK in 110ms (Views: 1.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 08:41:08 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"asd", "password"=>"[FILTERED]", "session"=>{"username"=>"asd", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "asd"], ["LIMIT", 1]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 08:45:44 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"adsf", "password"=>"[FILTERED]", "session"=>{"username"=>"adsf", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "adsf"], ["LIMIT", 1]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 08:50:05 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"jerrica", "password"=>"[FILTERED]", "session"=>{"username"=>"jerrica", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "jerrica"], ["LIMIT", 1]]
+Completed 200 OK in 76ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 08:50:39 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"jerrica", "password"=>"[FILTERED]", "session"=>{"username"=>"jerrica", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "jerrica"], ["LIMIT", 1]]
+Completed 200 OK in 77ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 08:51:57 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"jerrica", "password"=>"[FILTERED]", "session"=>{"username"=>"jerrica", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "jerrica"], ["LIMIT", 1]]
+Completed 200 OK in 76ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 08:53:03 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"jerrica", "password"=>"[FILTERED]", "session"=>{"username"=>"jerrica", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "jerrica"], ["LIMIT", 1]]
+Completed 200 OK in 77ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 08:53:11 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"jerrica", "password"=>"[FILTERED]", "session"=>{"username"=>"jerrica", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "jerrica"], ["LIMIT", 1]]
+Completed 200 OK in 81ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-05-19 08:53:18 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"bmo", "username"=>"bmo", "password"=>"[FILTERED]", "user"=>{"name"=>"bmo", "password"=>"[FILTERED]", "username"=>"bmo"}}
+Unpermitted parameter: username
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "password", "money", "created_at", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "bmo"], ["password", "$2a$10$CeibvvHcMvFvAXtlgxU1Dua2UA36CgVDLIAi6XOwuyEVe7FQAbl/m"], ["money", "10000.0"], ["created_at", "2017-05-19 15:53:19.021351"], ["updated_at", "2017-05-19 15:53:19.021351"], ["username", "bmo"]]
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 90ms (Views: 1.1ms | ActiveRecord: 8.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 08:53:19 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"bmo", "password"=>"[FILTERED]", "session"=>{"username"=>"bmo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bmo"], ["LIMIT", 1]]
+Completed 200 OK in 76ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-05-19 08:54:08 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"bmo", "password"=>"[FILTERED]", "session"=>{"username"=>"bmo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bmo"], ["LIMIT", 1]]
+Completed 200 OK in 83ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
