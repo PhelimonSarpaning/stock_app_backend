@@ -22,10 +22,6 @@ class SessionsController < ApplicationController
             token:  @token
          }
 
-
-
-
-          # render json: @user, status: :created, location: @user, message: 'token'
         else
 
           render json: {error: "wrong password", success: false}
