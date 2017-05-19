@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
   root 'welcome#index'
-  
+
   get 'sessions/new'
 
-  resources :ledgers
-  resources :stocks
-  resources :users
+  # resources :ledgers
+  resources :users do
+    resources :ledgers
+  end
+
   get '/login'  ,   to: 'sessions#new'
   post '/login'  ,  to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
