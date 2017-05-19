@@ -1,3 +1,4 @@
+
   [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
   [1m[35m (20.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
   [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8466514545143581290);[0m
@@ -46,9 +47,9 @@ Completed 200 OK in 11ms (Views: 1.9ms | ActiveRecord: 2.0ms)
 
 
 Started GET "/favicon.ico" for 127.0.0.1 at 2017-05-17 18:38:24 -0400
-  
+
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
-  
+
 actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -93,7 +94,7 @@ Migrating to AddPasswordDigest (20170518001549)
   [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "money", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "charlie"], ["money", "10000.0"], ["created_at", "2017-05-18 00:19:34.117455"], ["updated_at", "2017-05-18 00:19:34.117455"], ["password_digest", "$2a$10$fpo8qBoUYkpbS6wN74.WzeLhp/SlCVkI4guvy289DrADIpSeyQtnm"]]
   [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
 Started POST "/users" for 127.0.0.1 at 2017-05-18 11:20:17 -0400
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -101,7 +102,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.0.3) lib/active_record/migration.rb:573:in `check_pending!'
 activerecord (5.0.3) lib/active_record/migration.rb:549:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
@@ -132,7 +133,7 @@ puma (3.8.2) lib/puma/server.rb:435:in `process_client'
 puma (3.8.2) lib/puma/server.rb:299:in `block in run'
 puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/users" for 127.0.0.1 at 2017-05-18 11:21:34 -0400
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -140,7 +141,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.0.3) lib/active_record/migration.rb:573:in `check_pending!'
 activerecord (5.0.3) lib/active_record/migration.rb:549:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
@@ -171,7 +172,7 @@ puma (3.8.2) lib/puma/server.rb:435:in `process_client'
 puma (3.8.2) lib/puma/server.rb:299:in `block in run'
 puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/" for 127.0.0.1 at 2017-05-18 11:21:51 -0400
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -179,7 +180,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.0.3) lib/active_record/migration.rb:573:in `check_pending!'
 activerecord (5.0.3) lib/active_record/migration.rb:549:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
@@ -210,7 +211,7 @@ puma (3.8.2) lib/puma/server.rb:435:in `process_client'
 puma (3.8.2) lib/puma/server.rb:299:in `block in run'
 puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/" for 127.0.0.1 at 2017-05-18 11:22:43 -0400
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -218,7 +219,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.0.3) lib/active_record/migration.rb:573:in `check_pending!'
 activerecord (5.0.3) lib/active_record/migration.rb:549:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
@@ -249,7 +250,7 @@ puma (3.8.2) lib/puma/server.rb:435:in `process_client'
 puma (3.8.2) lib/puma/server.rb:299:in `block in run'
 puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/" for 127.0.0.1 at 2017-05-18 11:23:52 -0400
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -257,7 +258,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.0.3) lib/active_record/migration.rb:573:in `check_pending!'
 activerecord (5.0.3) lib/active_record/migration.rb:549:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
@@ -345,9 +346,9 @@ Processing by UsersController#create as */*
 Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: user):
-  
+
 app/controllers/users_controller.rb:55:in `user_params'
 app/controllers/users_controller.rb:18:in `create'
 Started POST "/users" for 127.0.0.1 at 2017-05-18 11:29:53 -0400
@@ -355,9 +356,9 @@ Processing by UsersController#create as */*
 Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: user):
-  
+
 app/controllers/users_controller.rb:55:in `user_params'
 app/controllers/users_controller.rb:18:in `create'
 Started POST "/users" for 127.0.0.1 at 2017-05-18 11:33:41 -0400
@@ -365,15 +366,15 @@ Processing by UsersController#create as */*
 Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: user):
-  
+
 app/controllers/users_controller.rb:55:in `user_params'
 app/controllers/users_controller.rb:18:in `create'
 Started OPTIONS "/users" for 127.0.0.1 at 2017-05-18 11:37:16 -0400
-  
+
 ActionController::RoutingError (No route matches [OPTIONS] "/users"):
-  
+
 actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -395,9 +396,9 @@ puma (3.8.2) lib/puma/server.rb:435:in `process_client'
 puma (3.8.2) lib/puma/server.rb:299:in `block in run'
 puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started OPTIONS "/users/" for 127.0.0.1 at 2017-05-18 11:37:36 -0400
-  
+
 ActionController::RoutingError (No route matches [OPTIONS] "/users"):
-  
+
 actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -423,9 +424,9 @@ Processing by UsersController#create as */*
 Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: user):
-  
+
 app/controllers/users_controller.rb:55:in `user_params'
 app/controllers/users_controller.rb:18:in `create'
 Started GET "/users" for 127.0.0.1 at 2017-05-18 11:38:11 -0400
@@ -464,9 +465,9 @@ Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 1.5ms)
 
 
 Started OPTIONS "/users/" for 127.0.0.1 at 2017-05-18 11:42:53 -0400
-  
+
 ActionController::RoutingError (No route matches [OPTIONS] "/users"):
-  
+
 actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -488,9 +489,9 @@ puma (3.8.2) lib/puma/server.rb:435:in `process_client'
 puma (3.8.2) lib/puma/server.rb:299:in `block in run'
 puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started OPTIONS "/users" for 127.0.0.1 at 2017-05-18 11:43:59 -0400
-  
+
 ActionController::RoutingError (No route matches [OPTIONS] "/users"):
-  
+
 actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -518,9 +519,9 @@ Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 0.6ms)
 
 
 Started GET "/user" for 127.0.0.1 at 2017-05-18 11:44:57 -0400
-  
+
 ActionController::RoutingError (No route matches [GET] "/user"):
-  
+
 actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -542,9 +543,9 @@ puma (3.8.2) lib/puma/server.rb:435:in `process_client'
 puma (3.8.2) lib/puma/server.rb:299:in `block in run'
 puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started OPTIONS "/Users" for 127.0.0.1 at 2017-05-18 11:45:15 -0400
-  
+
 ActionController::RoutingError (No route matches [OPTIONS] "/Users"):
-  
+
 actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -665,14 +666,14 @@ Processing by UsersController#show as */*
 Completed 404 Not Found in 34ms (ActiveRecord: 8.0ms)
 
 
-  
+
 ActiveRecord::RecordNotFound (Couldn't find User with 'id'=login):
-  
+
 app/controllers/users_controller.rb:60:in `set_user'
 Started GET "/login" for 127.0.0.1 at 2017-05-18 13:02:51 -0400
-  
+
 ActionController::RoutingError (No route matches [GET] "/login"):
-  
+
 actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -778,9 +779,9 @@ Processing by UsersController#create as */*
 Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: user):
-  
+
 app/controllers/users_controller.rb:55:in `user_params'
 app/controllers/users_controller.rb:18:in `create'
 Started POST "/users" for 127.0.0.1 at 2017-05-18 15:01:17 -0400
@@ -800,12 +801,12 @@ Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.5ms)
 
 
 Started POST "/login" for 127.0.0.1 at 2017-05-18 15:02:09 -0400
-  
+
 SyntaxError (/Users/matthewnguyen/dev/project-4/stock_app_backend/app/controllers/sessions_controller.rb:13: syntax error, unexpected tIDENTIFIER, expecting ')'
       @user = User.where("username =" params[:username])
                                             ^
 /Users/matthewnguyen/dev/project-4/stock_app_backend/app/controllers/sessions_controller.rb:13: syntax error, unexpected ')', expecting keyword_end):
-  
+
 app/controllers/sessions_controller.rb:13: syntax error, unexpected tIDENTIFIER, expecting ')'
 app/controllers/sessions_controller.rb:13: syntax error, unexpected ')', expecting keyword_end
 Started POST "/login" for 127.0.0.1 at 2017-05-18 15:03:42 -0400
@@ -814,10 +815,10 @@ Processing by SessionsController#create as HTML
 Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `Where' for #<Class:0x007fc6450b08e8>
 Did you mean?  where):
-  
+
 app/controllers/sessions_controller.rb:13:in `create'
 Started POST "/login" for 127.0.0.1 at 2017-05-18 15:05:07 -0400
 Processing by SessionsController#create as HTML
@@ -832,10 +833,10 @@ Processing by SessionsController#create as HTML
 Completed 500 Internal Server Error in 96ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NameError (undefined local variable or method `user' for #<SessionsController:0x007fc641af3048>
 Did you mean?  @user):
-  
+
 app/controllers/sessions_controller.rb:15:in `create'
 Started POST "/users" for 127.0.0.1 at 2017-05-18 15:11:37 -0400
 Processing by UsersController#create as HTML
@@ -844,9 +845,9 @@ Unpermitted parameter: username
 Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NameError (uninitialized constant User::Password):
-  
+
 app/models/user.rb:14:in `password='
 app/controllers/users_controller.rb:18:in `create'
 Started POST "/users" for 127.0.0.1 at 2017-05-18 15:14:48 -0400
@@ -856,9 +857,9 @@ Unpermitted parameter: username
 Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NameError (uninitialized constant User::Password):
-  
+
 app/models/user.rb:14:in `password='
 app/controllers/users_controller.rb:18:in `create'
 Started POST "/users" for 127.0.0.1 at 2017-05-18 15:17:32 -0400
@@ -868,9 +869,9 @@ Unpermitted parameter: username
 Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NameError (uninitialized constant User::Password):
-  
+
 app/models/user.rb:14:in `password='
 app/controllers/users_controller.rb:18:in `create'
 Started GET "/users" for 127.0.0.1 at 2017-05-18 15:17:36 -0400
@@ -879,9 +880,9 @@ Processing by UsersController#index as HTML
 Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.6ms)
 
 
-  
+
 NameError (uninitialized constant User::Password):
-  
+
 app/models/user.rb:10:in `password'
 app/controllers/users_controller.rb:8:in `index'
 Started GET "/users" for 127.0.0.1 at 2017-05-18 15:17:40 -0400
@@ -890,9 +891,9 @@ Processing by UsersController#index as HTML
 Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.8ms)
 
 
-  
+
 NameError (uninitialized constant User::Password):
-  
+
 app/models/user.rb:10:in `password'
 app/controllers/users_controller.rb:8:in `index'
 Started POST "/users" for 127.0.0.1 at 2017-05-18 15:22:01 -0400
@@ -917,9 +918,9 @@ Processing by SessionsController#create as HTML
 Completed 500 Internal Server Error in 27ms (ActiveRecord: 9.6ms)
 
 
-  
+
 BCrypt::Errors::InvalidHash (invalid hash):
-  
+
 app/controllers/sessions_controller.rb:16:in `new'
 app/controllers/sessions_controller.rb:16:in `create'
 Started POST "/login" for 127.0.0.1 at 2017-05-18 15:28:40 -0400
@@ -929,9 +930,9 @@ Processing by SessionsController#create as HTML
 Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `password' for #<User::ActiveRecord_Relation:0x007fc6451e14d8>):
-  
+
 app/controllers/sessions_controller.rb:15:in `create'
 Started POST "/login" for 127.0.0.1 at 2017-05-18 15:30:28 -0400
 Processing by SessionsController#create as HTML
@@ -940,9 +941,9 @@ Processing by SessionsController#create as HTML
 Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `password' for #<User::ActiveRecord_Relation:0x007fc6424570f8>):
-  
+
 app/controllers/sessions_controller.rb:15:in `create'
 Started POST "/login" for 127.0.0.1 at 2017-05-18 15:31:16 -0400
 Processing by SessionsController#create as HTML
@@ -951,9 +952,9 @@ Processing by SessionsController#create as HTML
 Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `password' for #<User::ActiveRecord_Relation:0x007fc6426f2380>):
-  
+
 app/controllers/sessions_controller.rb:16:in `create'
 Started POST "/login" for 127.0.0.1 at 2017-05-18 15:31:38 -0400
 Processing by SessionsController#create as HTML
@@ -968,9 +969,9 @@ Processing by SessionsController#create as HTML
 Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `password' for #<User::ActiveRecord_Relation:0x007fc6452f8470>):
-  
+
 app/controllers/sessions_controller.rb:19:in `create'
 Started POST "/login" for 127.0.0.1 at 2017-05-18 15:33:44 -0400
 Processing by SessionsController#create as HTML
@@ -979,9 +980,9 @@ Processing by SessionsController#create as HTML
 Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `password' for #<User::ActiveRecord_Relation:0x007fc6427309a0>):
-  
+
 app/controllers/sessions_controller.rb:19:in `create'
 Started POST "/login" for 127.0.0.1 at 2017-05-18 15:35:38 -0400
 Processing by SessionsController#create as HTML
@@ -990,9 +991,9 @@ Processing by SessionsController#create as HTML
 Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.9ms)
 
 
-  
+
 TypeError (no implicit conversion of Symbol into Integer):
-  
+
 app/controllers/sessions_controller.rb:19:in `create'
 Started POST "/login" for 127.0.0.1 at 2017-05-18 15:35:41 -0400
 Processing by SessionsController#create as HTML
@@ -1001,9 +1002,9 @@ Processing by SessionsController#create as HTML
 Completed 500 Internal Server Error in 25ms (ActiveRecord: 23.0ms)
 
 
-  
+
 TypeError (no implicit conversion of Symbol into Integer):
-  
+
 app/controllers/sessions_controller.rb:19:in `create'
 Started POST "/login" for 127.0.0.1 at 2017-05-18 15:39:54 -0400
 Processing by SessionsController#create as HTML
@@ -1033,9 +1034,9 @@ Processing by SessionsController#create as HTML
 Completed 500 Internal Server Error in 37ms (ActiveRecord: 14.8ms)
 
 
-  
+
 BCrypt::Errors::InvalidHash (invalid hash):
-  
+
 app/controllers/sessions_controller.rb:12:in `new'
 app/controllers/sessions_controller.rb:12:in `create'
 Started POST "/login" for 127.0.0.1 at 2017-05-18 15:45:37 -0400
@@ -1059,9 +1060,9 @@ Processing by SessionsController#create as HTML
 Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.3ms)
 
 
-  
+
 BCrypt::Errors::InvalidHash (invalid hash):
-  
+
 app/controllers/sessions_controller.rb:12:in `new'
 app/controllers/sessions_controller.rb:12:in `create'
 Started POST "/login" for 127.0.0.1 at 2017-05-18 15:49:10 -0400
@@ -1071,9 +1072,9 @@ Processing by SessionsController#create as HTML
 Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.5ms)
 
 
-  
+
 BCrypt::Errors::InvalidHash (invalid hash):
-  
+
 app/controllers/sessions_controller.rb:12:in `new'
 app/controllers/sessions_controller.rb:12:in `create'
 Started POST "/login" for 127.0.0.1 at 2017-05-18 15:49:42 -0400
@@ -1118,9 +1119,9 @@ Processing by SessionsController#create as HTML
 Completed 500 Internal Server Error in 164ms (ActiveRecord: 52.4ms)
 
 
-  
+
 BCrypt::Errors::InvalidHash (invalid hash):
-  
+
 app/controllers/sessions_controller.rb:12:in `new'
 app/controllers/sessions_controller.rb:12:in `create'
 Started POST "/login" for 127.0.0.1 at 2017-05-18 16:08:29 -0400
@@ -1159,22 +1160,22 @@ Completed 200 OK in 77ms (Views: 0.2ms | ActiveRecord: 0.2ms)
 
 
 Started POST "/login" for 127.0.0.1 at 2017-05-18 16:17:09 -0400
-  
+
 SyntaxError (/Users/matthewnguyen/dev/project-4/stock_app_backend/app/controllers/sessions_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting '}'
             error: "wrong password"
                  ^
 /Users/matthewnguyen/dev/project-4/stock_app_backend/app/controllers/sessions_controller.rb:19: syntax error, unexpected '}', expecting keyword_end
 /Users/matthewnguyen/dev/project-4/stock_app_backend/app/controllers/sessions_controller.rb:34: syntax error, unexpected end-of-input, expecting keyword_end):
-  
+
 app/controllers/sessions_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting '}'
 app/controllers/sessions_controller.rb:19: syntax error, unexpected '}', expecting keyword_end
 app/controllers/sessions_controller.rb:34: syntax error, unexpected end-of-input, expecting keyword_end
 Started POST "/login" for 127.0.0.1 at 2017-05-18 16:17:45 -0400
-  
+
 SyntaxError (/Users/matthewnguyen/dev/project-4/stock_app_backend/app/controllers/sessions_controller.rb:16: syntax error, unexpected tLABEL
           render json: error: "wrong password"
                              ^):
-  
+
 app/controllers/sessions_controller.rb:16: syntax error, unexpected tLABEL
 Started POST "/login" for 127.0.0.1 at 2017-05-18 16:18:04 -0400
 Processing by SessionsController#create as HTML
@@ -1191,23 +1192,23 @@ Completed 200 OK in 67ms (Views: 0.2ms | ActiveRecord: 0.4ms)
 
 
 Started POST "/login" for 127.0.0.1 at 2017-05-18 16:19:21 -0400
-  
+
 SyntaxError (/Users/matthewnguyen/dev/project-4/stock_app_backend/app/controllers/sessions_controller.rb:13: syntax error, unexpected '\n', expecting =>):
-  
+
 app/controllers/sessions_controller.rb:13: syntax error, unexpected '\n', expecting =>
 Started POST "/login" for 127.0.0.1 at 2017-05-18 16:20:23 -0400
-  
+
 SyntaxError (/Users/matthewnguyen/dev/project-4/stock_app_backend/app/controllers/sessions_controller.rb:13: syntax error, unexpected {, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
 ...eated, user: @user, success: :{success: true}
 ...                               ^):
-  
+
 app/controllers/sessions_controller.rb:13: syntax error, unexpected {, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
 Started POST "/login" for 127.0.0.1 at 2017-05-18 16:20:27 -0400
-  
+
 SyntaxError (/Users/matthewnguyen/dev/project-4/stock_app_backend/app/controllers/sessions_controller.rb:13: syntax error, unexpected {, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
 ...eated, user: @user, success: :{success: true}
 ...                               ^):
-  
+
 app/controllers/sessions_controller.rb:13: syntax error, unexpected {, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
 Started POST "/login" for 127.0.0.1 at 2017-05-18 16:23:43 -0400
 Processing by SessionsController#create as HTML
@@ -1223,9 +1224,9 @@ Processing by SessionsController#create as HTML
 Completed 500 Internal Server Error in 33ms (ActiveRecord: 1.0ms)
 
 
-  
+
 BCrypt::Errors::InvalidHash (invalid hash):
-  
+
 app/controllers/sessions_controller.rb:12:in `new'
 app/controllers/sessions_controller.rb:12:in `create'
 Started POST "/login" for 127.0.0.1 at 2017-05-18 16:38:22 -0400
@@ -1242,9 +1243,9 @@ Processing by SessionsController#create as HTML
 Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
 
 
-  
+
 BCrypt::Errors::InvalidHash (invalid hash):
-  
+
 app/controllers/sessions_controller.rb:12:in `new'
 app/controllers/sessions_controller.rb:12:in `create'
 Started POST "/login" for 127.0.0.1 at 2017-05-18 16:39:39 -0400
@@ -1289,9 +1290,9 @@ Processing by SessionsController#create as HTML
 Completed 500 Internal Server Error in 8ms (Views: 0.9ms | ActiveRecord: 5.7ms)
 
 
-  
+
 AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
-  
+
 app/controllers/sessions_controller.rb:26:in `create'
 Started POST "/login" for 127.0.0.1 at 2017-05-18 16:43:59 -0400
 Processing by SessionsController#create as HTML
