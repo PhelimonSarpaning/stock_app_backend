@@ -10,20 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170519200137) do
+ActiveRecord::Schema.define(version: 20170519213450) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "ledgers", force: :cascade do |t|
     t.integer  "user_id"
-    t.integer  "stock_id"
     t.integer  "qty"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.decimal  "price"
     t.boolean  "watched"
-    t.index ["stock_id"], name: "index_ledgers_on_stock_id", using: :btree
+    t.string   "symbol"
     t.index ["user_id"], name: "index_ledgers_on_user_id", using: :btree
   end
 
@@ -44,6 +43,5 @@ ActiveRecord::Schema.define(version: 20170519200137) do
     t.string   "username"
   end
 
-  add_foreign_key "ledgers", "stocks"
   add_foreign_key "ledgers", "users"
 end

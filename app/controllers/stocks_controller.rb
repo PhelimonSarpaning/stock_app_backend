@@ -3,14 +3,14 @@ class StocksController < ApplicationController
 
   # GET /stocks
   def index
-    @stocks = Stock.all
+    @stocks = Ledger.where(user_id: params[:user_id])
 
     render json: @stocks
   end
 
   # GET /stocks/1
   def show
-    render json: @stock
+    render json: @stock.to_json(include: :users)
   end
 
   # POST /stocks

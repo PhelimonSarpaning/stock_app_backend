@@ -1,6 +1,6 @@
 class Stock < ApplicationRecord
-  has_many :ledgers
-  has_many :users, through: :ledgers
+  # has_many :ledgers
+  # has_many :users, through: :ledgers
 
   def self.find_by_ticker(ticker_symbol)
     where(ticker:ticker_symbol).first
