@@ -24,7 +24,6 @@ class SessionsController < ApplicationController
           @stocks.push(tempStock)
          end
 
-
            puts @stocks
 
            puts "***************"

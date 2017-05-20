@@ -5,12 +5,12 @@ class UsersController < ApplicationController
   def index
     @users = User.all
 
-    render json: @users
+    render json: @users.to_json(inlcude: :ledgers)
   end
 
   # GET /users/1
   def show
-    render json: @user
+    render json: @user.to_json(include: :ledgers)
   end
 
   # POST /users
@@ -45,7 +45,7 @@ class UsersController < ApplicationController
 
   # my_portfolio
   def my_portfolio
-    
+
   end
 
   private
