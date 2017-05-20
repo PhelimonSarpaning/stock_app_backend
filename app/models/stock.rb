@@ -12,7 +12,10 @@ class Stock < ApplicationRecord
 
     puts looked_up_stock.bid_realtime
 
-    new_stock = new(ticker: looked_up_stock.symbol, name: looked_up_stock.name)
+    new_stock = new(
+    ticker: looked_up_stock.symbol,
+    name: looked_up_stock.name
+    )
     #
     # new_stock.price = new_stock.price
     new_stock
