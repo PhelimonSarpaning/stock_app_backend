@@ -12,22 +12,32 @@ class SessionsController < ApplicationController
         if BCrypt::Password.new(@user.password) == params[:password]
 
          # ..... Testing user stock
-         @stocks = []
-         userStocks = ['V', 'F', 'GOOG' 'YHOO']
-         puts "***************"
-         userStocks.each do |stockValue|
-           looked_up_stock = StockQuote::Stock.quote(stockValue)
-           tempStock = {
-             name: looked_up_stock.name,
-             symbol: looked_up_stock.symbol
-           }
-          @stocks.push(tempStock)
-         end
+        #  @stocks = []
+        #  Get User Stocks
+         @userStocks = User.find(@user.id).ledgers
+        #  p userStocks
+        #  userStocks.each do |s|
+        #    tempStock = {
+        #      name: s.name,
+        #      symbol: s.symbol,
+        #      price: s.price,
+        #      qty: s.qty,
+        #      isWatched: s.watched
+        #    }
+        #   @stocks.push(tempStock)
+         #
+        #  end
+# looked_up_stock = StockQuote::Stock.quote(stockValue)
+         # 
+        #  puts "***************"
+         #
+         #
+        #    puts @stocks
+         #
+        #   puts "***************"
 
-           puts @stocks
 
-           puts "***************"
-
+          # get token
           payload = {data: @user.username}
           hmac_secret = 'our$ecretTrading$tockApp'
           @token  = JWT.encode payload, hmac_secret, 'HS256'
@@ -36,7 +46,8 @@ class SessionsController < ApplicationController
 
           render json: {
             user:  @user,
-            token:  @token
+            token:  @token,
+            userstocks: @userStocks
          }
 
         else
