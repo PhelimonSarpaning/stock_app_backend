@@ -34,7 +34,6 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     hashed_password = BCrypt::Password.create(params[:password])
     @user.name = params[:name]
-    @user.username = params[:username]
     @user.password = hashed_password
     @user.save
     @userStocks = User.find(@user[:id]).ledgers
