@@ -15,6 +15,8 @@ class LedgersController < ApplicationController
   # POST /ledgers
   def create
     @ledger = Ledger.new(ledger_params)
+
+
     stockprice = 0
     # Get current Stock
     stock = params[:stock]
@@ -100,33 +102,39 @@ class LedgersController < ApplicationController
             render json: @ledger.errors, status: :unprocessable_entity
           end
 
-        end
+        end # end tempstockledger.size
 
 
       else
         render json: {errors: "Not Enough Fund"}
+      end #end if @userFund.to_f.round(2) >= @subSum.to_f.round(2)
+
+    else
+      puts "i am here .. prepare to add a stock watch"
+      @ledger.price = 0
+      @ledger.qty = 0
+
+      tempstockledger = Ledger.where(user_id: @user[:id], symbol: stock[:symbol])
+      if tempstockledger.size > 0
+        # render json: {errors: "The stock is already in the watche or bought list"}
+        puts "there is a record"
+      else
+        puts "no record - can add to the ledger now"
+        if @ledger.save
+          puts "save ok"
+           @userStocks = User.find(@user[:id]).ledgers
+           render json: {
+             userstocks: @userStocks,
+             currentUser: @user
+          }
+        else
+          puts "save error"
+          render json: @ledger.errors, status: :unprocessable_entity
+        end
       end
 
     end
-    # if you get this fall you are ok ..
-    # new - ledger
-  else
-    # @ledger.price = 0
-    # @ledger.qty = 0
-    #
-    #
-    #   if @ledger.save
-    #     @user.save!
-    #      @userStocks = User.find(@user[:id]).ledgers
-    #     #  save User too.
-    #      render json: {
-    #        userstocks: @userStocks,
-    #        currentUser: @user
-    #     }
-      # else
-      #   render json: @ledger.errors, status: :unprocessable_entity
-      # end
-  end
+  end # End def Create
 
 
 
