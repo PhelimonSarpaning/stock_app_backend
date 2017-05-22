@@ -44,22 +44,41 @@ class StocksController < ApplicationController
       looked_up_stock = StockQuote::Stock.quote(params[:stock])
       return nil unless looked_up_stock.name
       @new_stock = looked_up_stock
-      # @new_stock = {
-      #   ticker: looked_up_stock.symbol,
-      #   name: looked_up_stock.name,
-      #   ask_price: looked_up_stock.ask,
-      #   bid_price: looked_up_stock.bid,
-      #   last_trade_price: looked_up_stock.last_trade_price_only
-      #
-      # }
 
       if @new_stock
         # render json: @new_stock
-        render json: @new_stock 
+        render json: @new_stock
       else
         render json: {errors: "No record found"}
       end
     end
+  end
+
+  def searchtickers
+    @user = params[:user]
+    @userstocks = params[:stock]
+
+    @tickers = []
+    @message = ""
+
+    @userstocks.each do |stock|
+      stockInfo =  StockQuote::Stock.quote(stock[:symbol])
+      tempObject = {
+        name: stockInfo.name,
+        symbol: stockInfo.symbol,
+        askprice: stockInfo.ask,
+        change: stockInfo.change
+      }
+      @tickers.push(tempObject)
+      @message  += "|    #{stockInfo.name}, #{stockInfo.last_trade_price_only}, #{stockInfo.change}       |"
+
+    end
+
+    render json: {
+      tickers: @tickers,
+      tickersMessage: @message
+      }
+
   end
 
 
