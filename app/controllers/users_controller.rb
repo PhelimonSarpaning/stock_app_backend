@@ -38,8 +38,10 @@ class UsersController < ApplicationController
   end
 
   # DELETE /users/1
+
   def destroy
-    @user.destroy
+    @user = User.destroy(params[:id])
+    render json: {status: 204, user: @user}
   end
 
   # my_portfolio

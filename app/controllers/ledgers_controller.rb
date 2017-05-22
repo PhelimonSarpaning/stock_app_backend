@@ -151,7 +151,8 @@ class LedgersController < ApplicationController
   # DELETE /ledgers/1
   def destroy
     ledger = Ledger.destroy(params[:id])
-    render json: {status: 204, user: @user}
+    @userStocks = User.find(params[:user_id]).ledgers
+    render json: {status: 204, user: @user, ledger: ledger, userstocks: @userStocks}
   end
 
   private
