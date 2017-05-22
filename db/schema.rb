@@ -38,9 +38,8 @@ ActiveRecord::Schema.define(version: 20170519213450) do
     t.string   "name"
     t.string   "password"
     t.decimal  "money"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
-    t.string   "password_digest"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.string   "username"
   end
 
