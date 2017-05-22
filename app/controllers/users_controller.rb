@@ -15,18 +15,30 @@ class UsersController < ApplicationController
 
   # POST /users
   def create
-    hashed_password = BCrypt::Password.create(params[:password])
-    @user = User.new(user_params)
-    @user.name = params[:name]
-    @user.username = params[:username]
-    @user.password = hashed_password
-    @user.money = 10000
 
-    if @user.save
-      render json: @user, status: :created, location: @user
+    tempUser = User.find_by_username(params[:username])
+
+    if tempUser
+      puts "Username is already taken."
+      puts "++++++++++++++++++++++++++++++++"
+      render json: {error: "The username is already taken."}
     else
-      render json: @user.errors, status: :unprocessable_entity
-    end
+
+          hashed_password = BCrypt::Password.create(params[:password])
+          @user = User.new(user_params)
+          @user.name = params[:name]
+          @user.username = params[:username]
+          @user.password = hashed_password
+          @user.money = 10000
+
+          if @user.save
+            render json: @user, status: :created, location: @user
+          else
+            render json: @user.errors, status: :unprocessable_entity
+          end
+      end
+
+
   end
 
   # PATCH/PUT /users/1
