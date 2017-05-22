@@ -32,7 +32,11 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1
   def update
     @user = User.find(params[:id])
-    @user.update(user_params)
+    hashed_password = BCrypt::Password.create(params[:password])
+    @user.name = params[:name]
+    @user.username = params[:username]
+    @user.password = hashed_password
+    @user.save
     @userStocks = User.find(@user[:id]).ledgers
     render json: {status: 200, user: @user, userstocks: @userStocks}
   end
