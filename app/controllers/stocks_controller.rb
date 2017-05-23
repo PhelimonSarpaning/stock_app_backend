@@ -81,6 +81,26 @@ class StocksController < ApplicationController
 
   end
 
+  def defaultsearch
+    @defaults = params[:stock]
+
+    @defaulttickers = []
+
+    @defaults.each do |stock|
+      defaultInfo = StockQuote::Stock.quote(stock[:symbol])
+      defaultObject = {
+        name: defaultInfo.name,
+        symbol: defaultInfo.symbol,
+        askprice: defaultInfo.ask,
+        change: defaultInfo.change
+      }
+      @defaulttickers.push(defaultObject)
+    end
+
+    render json: {
+      default: @defaulttickers
+    }
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
